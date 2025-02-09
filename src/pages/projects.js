@@ -7,9 +7,9 @@ import Image from "next/image";
 import Link from "next/link";
 import proj1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
 import proj2 from "../../public/images/projects/lighttheme-eventtracker.png";
-import proj3 from "../../public/images/projects/fashion-studio-website.jpg";
-import proj4 from "../../public/images/projects/portfolio-cover-image.jpg";
-import proj5 from "../../public/images/projects/agency-website-cover-image.jpg";
+import proj3 from "../../public/images/projects/chess.png";
+import proj4 from "../../public/images/projects/Portfolio website.png";
+import proj5 from "../../public/images/projects/spell_bee.png";
 import proj6 from "../../public/images/projects/devdreaming.jpg";
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -189,8 +189,36 @@ export default function Projects() {
                  over 1, 7, or 30 days using interactive charts. Built with Requests for API calls and Matplotlib for data visualization, it fetches
                  data from CoinGecko API to help users monitor their favorite cryptocurrencies effectively."
                 img={proj1}
-                link=""
+                link="https://github.com/samarjeet2780/LiveCryptoTracking"
                 github="https://github.com/samarjeet2780/LiveCryptoTracking"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Logical Webpage (Deployed)"
+                title="Chess Game"
+                img={proj3}
+                link="https://main.d1rgz0dh48mmkl.amplifyapp.com/"
+                github="https://github.com/samarjeet2780/Chess"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Audio Integrated (Deployed)"
+                img={proj5}
+                title="Spell Bee"
+                link="https://main.d2wg30r484u8sh.amplifyapp.com/"
+                github="https://github.com/codebucks27/wibe-studio"
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProject
+                type="Portfolio Website (Deployed)"
+                title="Portfolio Website"
+                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth page transitions, cool background effects, unique design and it is mobile responsive."
+                img={proj4}
+                link="https://main.d2iut6eociroq0.amplifyapp.com/"
+                github="https://github.com/samarjeet2780/Portfolio-Website"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -198,39 +226,12 @@ export default function Projects() {
                 type="Full Stack Website"
                 title="Event Tracker Application"
                 img={proj2}
-                link=""
+                link="https://github.com/samarjeet2780/EventTracker"
                 github="https://github.com/samarjeet2780/EventTracker"
               />
             </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                type="Website"
-                title="Fashion Studio Website"
-                img={proj3}
-                link=""
-                github="https://github.com/codebucks27/wibe-studio"
-              />
-            </div>
-            <div className="col-span-12">
-              <FeaturedProject
-                type="Portfolio Website"
-                title="Portfolio Website"
-                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth page transitions, cool background effects, unique design and it is mobile responsive."
-                img={proj4}
-                link=""
-                github="https://github.com/samarjeet2780/Portfolio-Website"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                type="Website Template"
-                img={proj5}
-                title="Agency Website Template"
-                link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
-                github="https://github.com/codebucks27/wibe-studio"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
+            
+            {/* <div className="col-span-6 sm:col-span-12">
               <Project
                 type="Blog Website"
                 img={proj6}
@@ -238,7 +239,7 @@ export default function Projects() {
                 link="https://devdreaming.com"
                 github="https://github.com/codebucks27"
               />
-            </div>
+            </div> */}
           </div>
         </Layout>
       </main>

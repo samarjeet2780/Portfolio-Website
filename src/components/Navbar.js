@@ -154,7 +154,7 @@ const Navbar = () => {
         <CustomMobileLink toggle={handleClick} className="mr-4 lg:m-0 lg:my-2" href="/" title="Home" />
         <CustomMobileLink toggle={handleClick} className="mx-4 lg:m-0 lg:my-2" href="/about" title="About" />
         <CustomMobileLink toggle={handleClick} className="mx-4 lg:m-0 lg:my-2" href="/projects" title="Projects" />
-        <CustomMobileLink toggle={handleClick} className="ml-4 lg:m-0 lg:my-2" href="/articles" title="Articles" />
+        {/* <CustomMobileLink toggle={handleClick} className="ml-4 lg:m-0 lg:my-2" href="/articles" title="Articles" /> */}
       </nav>
       <nav
         className="flex items-center justify-center  mt-2
@@ -183,20 +183,26 @@ const Navbar = () => {
         </motion.a>
         
         
+        <div className="flex items-center">
+  <button
+    onClick={() => setMode(mode === "light" ? "dark" : "light")}
+    className={`w-6 h-6 ease ml-3 flex items-center justify-center rounded-full p-1  
+      ${mode === "light" ? "bg-dark  text-light" : "bg-light  text-dark"}
+      `}
+    aria-label="theme-switcher"
+  >
+    {mode === "light" ? (
+      <SunIcon className={"fill-dark"} />
+    ) : (
+      <MoonIcon className={"fill-dark"} />
+    )}
+  </button>
+  <span className="ml-2 text-sm font-medium text-dark dark:text-light">Try me</span>
 
-        <button
-          onClick={() => setMode(mode === "light" ? "dark" : "light")}
-          className={`w-6 h-6 ease m-1 ml-3 sm:mx-1 flex items-center justify-center rounded-full p-1  
-            ${mode === "light" ? "bg-dark  text-light" : "bg-light  text-dark"}
-            `}
-          aria-label="theme-switcher"
-        >
-          {mode === "light" ? (
-            <SunIcon className={"fill-dark"} />
-          ) : (
-            <MoonIcon className={"fill-dark"} />
-          )}
-        </button>
+</div>
+
+
+
       </nav>
       </motion.div>
 
