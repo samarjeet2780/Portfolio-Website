@@ -63,7 +63,7 @@ export default function About() {
               </p>
               <p className="my-4 font-medium">
               I have passion for building innovative solutions and exploring new technologies. My experience ranges from developing applications as tech projects to 
-              helping University of Winnipeg's members solve their tech issues.
+              helping University of Winnipeg`&apos;`s members solve their tech issues.
               </p>
               <p className="font-medium">
                 Whether I&apos;m working on a website, mobile app, or other
