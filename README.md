@@ -1,6 +1,6 @@
 # 🌐 Samarjeet Singh's Portfolio
 
-Welcome to my personal portfolio website! 🚀 This website showcases my skills, experience, and projects as a **Software Developer** and **Data Analyst**. Built with modern web technologies, it provides a smooth and interactive user experience.  
+Welcome to my personal portfolio website! 🚀 This website showcases my skills, experience, and projects as a **Software Developer**. Built with modern web technologies, it provides a smooth and interactive user experience.  
 
 ## 📌 Live Demo
 🔗 **Check it out here:** (https://main.d2iut6eociroq0.amplifyapp.com/)
